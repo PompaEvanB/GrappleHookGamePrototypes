@@ -1,5 +1,5 @@
 # GrappleHookGamePrototypes
-Please note that this is just a prototype. Also, please wait for menu's to completely fade in other wise you may get stuck. Inside of the "nextcheck" folder is where the Sc ene Flow and Cinematics files are located.
+Please note that this is just a prototype. Also, please wait for menu's to completely fade in other wise you may get stuck. Inside of the "nextcheck" folder is where the Scene Flow and Cinematics files are located. The core gameplay is located in the "coregameplay2" folder.
 
 # Scene Flow
 ## Scene types
@@ -18,3 +18,19 @@ The games logo fades into and out of existance. Unfortunately there is no "middl
 The buttons all have hovering and pressed states. There is also a fade in between scenes. The movement of the games title logo makes the main menu feel alive.
 ## Choreography in code
 The title's movement is created using hand coded tweens within unity.
+
+# Core Gameplay
+## Audio Requirements
+- Background music loops and plays continuously.
+- Reeling sound effect only plays while the player is grappling.
+## Visual Requirements
+- The main character circle is a collection of sprites.
+- The level is generated using tilemaps.
+## Motion Requirements
+- The main point of the game is based on physics based grappling/reeling to get from point A to point B.
+## Progression Requirements
+- Progression is very basic at the moment, where progress is considered getting further and further up in the tower for a high score. In future builds, there will be a proper death state, and obstacles that will make reaching higher and higher more difficult.
+## Prefab Requirements
+- All of the level chunks that are stacked on top of one another are prefabs being randomly generated.
+- The main character is a prefab object that can be spawned.
+
