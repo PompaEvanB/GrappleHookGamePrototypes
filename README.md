@@ -1,10 +1,13 @@
 # Final Game
 ## Core Requirements
+### Note
+WebGL Unity Tiles have an issue loading, this is an in engine problem not dependant on us and this is a completely visual bug.
+
 ### [project archive] The team has submitted a self-contained archive of their design and deployment work (e.g. a repository on GitHub). This archive contains some documentation (e.g. a README.md file) that is immediately visible even to non-technical audiences.
 That is this readme hello :-)
 
-### [main game] The documentation links to a deployed version of the main game compatible with mobile browsers. (This might be on GitHub pages, Itch.io, or other web hosting site.)
-
+### [main game] The documentation links to a deployed version of the main game compatible with mobile browsers.
+https://anthony-molle.itch.io/grabble (Password CMPM120)
 
 ### [prototypes] The documentation links to the deployed version of three playable prototypes (core gameplay, scene flow, and cinematics). (They don't need to be deployed on the same platform as the main game, but the audience needs to be able to play them by simply clicking a direct link to them.)
 Scene Flow and Cinematics: https://pompaevanb.github.io/GrappleHookGamePrototypes/nextcheck/index.html
@@ -18,6 +21,7 @@ Our Grappling mechanic involves the grapple hook recalling to the player over ti
 ### [selectable requirements] The documentation describes which of the three selectable requirements your team is attempting to satisfy.
 Data-driven experience progression
 Procedural graphics
+Advanced visual assets
 
 ### [contributor credits] The documentation identifies all of the direct contributors to the code and their assigned roles (e.g. "testing lead")
 Anthony Molle
@@ -45,3 +49,5 @@ There is an ingame tutorial screen on the tutorial tab.
 player high score data is stored in a json to be used and referenced later
 ## Procedural graphics
 All of our game tiles are procedurally generated in tile sets at random!
+## Advanced visual assets
+All of the particle systems are file-based visual assets that aren't images.
