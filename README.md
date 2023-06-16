@@ -1,36 +1,53 @@
-# GrappleHookGamePrototypes
-Please note that this is just a prototype. Also, please wait for menu's to completely fade in other wise you may get stuck. Inside of the "nextcheck" folder is where the Scene Flow and Cinematics files are located. The core gameplay is located in the "coregameplay2" folder.
+# Final Game
+## Core Requirements
+### Note
+WebGL Unity Tiles have an issue loading, this is an in engine problem not dependant on us and this is a completely visual bug.
 
-# Scene Flow
-## Scene types
-The Game contains a logo screen, a main title screen, an options screen, a credit screen, and a gameplay screen. (We have actual gameplay but just or the sake of this prototype it links to an empty gmaeplay scene as to not disturb workflow.
-## Communication between scenes
-You have to press the options button in the main menu scene to get to the options scene. All of the buttons go to their respective scenes, and cannot be reached without the input from the previous scene.
-## Reachability
-All scenes are available from one another (except for the logo screen but thats not really a player scene).
-## Transitions
-Scenes have a coordinated fade between them. For example from the main menu to the credits scene has a coordinated fade.
+### [project archive] The team has submitted a self-contained archive of their design and deployment work (e.g. a repository on GitHub). This archive contains some documentation (e.g. a README.md file) that is immediately visible even to non-technical audiences.
+That is this readme hello :-)
 
-# Cinematics
-## Non-interactive cinematic
-The games logo fades into and out of existance. Unfortunately there is no "middle" part of the animation unless you count the logo's alpha as the middle part. (please give partial credit)
-## Interactive cinematic
-The buttons all have hovering and pressed states. There is also a fade in between scenes. The movement of the games title logo makes the main menu feel alive.
-## Choreography in code
-The title's movement is created using hand coded tweens within unity.
+### [main game] The documentation links to a deployed version of the main game compatible with mobile browsers.
+https://anthony-molle.itch.io/grabble (Password CMPM120)
 
-# Core Gameplay
-## Audio Requirements
-- Background music loops and plays continuously.
-- Reeling sound effect only plays while the player is grappling.
-## Visual Requirements
-- The main character circle is a collection of sprites.
-- The level is generated using tilemaps.
-## Motion Requirements
-- The main point of the game is based on physics based grappling/reeling to get from point A to point B.
-## Progression Requirements
-- Progression is very basic at the moment, where progress is considered getting further and further up in the tower for a high score. In future builds, there will be a proper death state, and obstacles that will make reaching higher and higher more difficult.
-## Prefab Requirements
-- All of the level chunks that are stacked on top of one another are prefabs being randomly generated.
-- The main character is a prefab object that can be spawned.
+### [prototypes] The documentation links to the deployed version of three playable prototypes (core gameplay, scene flow, and cinematics). (They don't need to be deployed on the same platform as the main game, but the audience needs to be able to play them by simply clicking a direct link to them.)
+Scene Flow and Cinematics: https://pompaevanb.github.io/GrappleHookGamePrototypes/nextcheck/index.html
+Core Gameplay: https://anthony-molle.itch.io/grabble
+(The Password to the coregameplay is CMPM120)
 
+
+### [theme] The documentation describes how the theme of "nearby in space, but distant in time" was addressed in the main game's design. (One sentence would be sufficient, but try to keep the description to a single paragraph even if you want to give more detail.)
+Our Grappling mechanic involves the grapple hook recalling to the player over time. The player cant use the grappling hook again until it is completely recalled. So although the hook may be nearby, it is distant in the time until you can use it again. 
+
+### [selectable requirements] The documentation describes which of the three selectable requirements your team is attempting to satisfy.
+Data-driven experience progression
+Procedural graphics
+Advanced visual assets
+
+### [contributor credits] The documentation identifies all of the direct contributors to the code and their assigned roles (e.g. "testing lead")
+Anthony Molle
+Zane Chen Shan
+Mason Huang
+Evan Pompa
+
+### [asset credits] If the team has built there game using assets created by anyone else (even if those assets were modified before inclusion in the game), the upstream source of those assets should be credited in the documentation as well.
+- Music: https://opengameart.org/content/space-boss-battle-theme
+- Grapple Sound Effect: https://freesound.org/people/TheFlyFishingFilmmaker/sounds/641696/
+- Font: https://www.dafont.com/tallboy.font
+
+
+### The game was developed using a tool where most game rules are expressed in hand-typed textual program code (e.g. JavaScript or C#).
+The Game was developed in C#
+
+### The team's repository directly shows contributions from several team members.
+We had two githubs for this project, here is a link to the otherone to see all of the commits. https://github.com/AnthonyMolle/GrappleHookGame
+
+### [self-teaching] The player is capable of learning to play from within the game, without consulting outside instructions. (For example, the game's website might say "a touchscreen is recommended for playing this game" but it should not say "tap and drag on the left side of side of the screen to make your character walk". This message should instead be conveyed inside of the game so that the player can learn this without leaving the full-screen mode.)
+There is an ingame tutorial screen on the tutorial tab.
+
+# Selectable Requirements
+## Data-driven experience progression
+player high score data is stored in a json to be used and referenced later
+## Procedural graphics
+All of our game tiles are procedurally generated in tile sets at random!
+## Advanced visual assets
+All of the particle systems are file-based visual assets that aren't images.
